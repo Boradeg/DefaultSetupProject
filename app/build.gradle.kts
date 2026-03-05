@@ -58,6 +58,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,6 +81,7 @@ dependencies {
     val retrofit_version = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
     // JSON Converter (Gson)
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
     implementation("io.coil-kt:coil-compose:2.6.0")
 }
